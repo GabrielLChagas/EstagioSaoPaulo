@@ -13,13 +13,13 @@ public class Main {
 
 //  2-------------
 
-        atividade2 chamaga2 = new atividade2();
+        atividade2 chamada2 = new atividade2();
 
-        chamaga2.valorEscolhido();
+        chamada2.valorEscolhido();
 
-        chamaga2.calcularFiibonacci();
+        chamada2.calcularFiibonacci();
 
-        chamaga2.chequagem();
+        chamada2.chequagem();
 
 //  3-------------
 // 3) Dado um vetor que guarda o valor de faturamento diário de uma distribuidora,
@@ -36,16 +36,13 @@ public class Main {
 
 
 //  4-------------
-//        4) Dado o valor de faturamento mensal de uma distribuidora, detalhado por estado:
-//• SP – R$67.836,43
-//• RJ – R$36.678,66
-//• MG – R$29.229,88
-//• ES – R$27.165,48
-//• Outros – R$19.849,53
-//
-//  Escreva um programa na linguagem que desejar onde calcule o percentual de representação
-//  que cada estado teve dentro do valor total mensal da distribuidora.  
-//
+        atividade4 chamada4 = new atividade4();
+
+        chamada4.calcularTotal();
+        chamada4.calcularPocentagem();
+        chamada4.teste();
+
+
 //  5-------------
 
         Scanner inFrase = new Scanner(System.in);
