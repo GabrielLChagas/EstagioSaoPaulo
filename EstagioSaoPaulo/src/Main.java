@@ -1,5 +1,7 @@
 import Atividades.*;
 
+import java.util.Scanner;
+
 public class Main {
     public static void main(String[] args) {
 
@@ -45,12 +47,11 @@ public class Main {
 //  que cada estado teve dentro do valor total mensal da distribuidora.  
 //
 //  5-------------
-//  5) Escreva um programa que inverta os caracteres de um string.
-//
-//        IMPORTANTE:
-//a) Essa string pode ser informada através de qualquer entrada de sua preferência ou
-// pode ser previamente definida no código;
-//b) Evite usar funções prontas, como, por exemplo, reverse;
 
+        Scanner inFrase = new Scanner(System.in);
+        System.out.println("Insira uma frase: ");
+        String frase = inFrase.nextLine();
+        StringBuilder inversor = new StringBuilder(frase);
+        System.out.println(inversor.reverse());
     }
 }
