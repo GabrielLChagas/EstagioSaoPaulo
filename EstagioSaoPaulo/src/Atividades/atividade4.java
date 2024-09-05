@@ -15,7 +15,7 @@ public class atividade4 {
 
     Map<String, Double> faturaPocentual = new HashMap<>();
 
-    Set<String> estados = faturaMensal.keySet();
+    Iterator<String> estados = faturaMensal.keySet().iterator();
 
     Iterator<Double> valoresOriginais = faturaMensal.values().iterator();
 
@@ -27,11 +27,13 @@ public class atividade4 {
         return total;
     }
 
+    Double total = calcularTotal().doubleValue();
+
     public void calcularPocentagem(){
         Double pocentagem = 0d;
         while (valoresOriginais.hasNext()){
-            pocentagem = valoresOriginais.next()/calcularTotal();
-            faturaPocentual.put(estados.iterator().next(), pocentagem);
+            pocentagem = valoresOriginais.next()/total;
+            faturaPocentual.put(estados.next(), pocentagem);
         }
     }
 
