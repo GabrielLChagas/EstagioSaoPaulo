@@ -1,0 +1,37 @@
+# Vamos criar o arquivo JSON com os dados de faturamento mensal.
+import json
+
+faturamento_mensal = {
+    "faturamentoMensal": [
+        { "dia": 1, "faturamento": 1000.50 },
+        { "dia": 2, "faturamento": 0.0 },      # Feriado ou final de semana
+        { "dia": 3, "faturamento": 2500.75 },
+        { "dia": 4, "faturamento": 0.0 },      # Feriado ou final de semana
+        { "dia": 5, "faturamento": 3200.00 },
+        { "dia": 6, "faturamento": 0.0 },      # Feriado ou final de semana
+        { "dia": 7, "faturamento": 1500.25 },
+        { "dia": 8, "faturamento": 0.0 },      # Feriado ou final de semana
+        { "dia": 9, "faturamento": 1800.30 },
+        { "dia": 10, "faturamento": 2000.10 },
+        { "dia": 11, "faturamento": 0.0 },     # Feriado ou final de semana
+        { "dia": 12, "faturamento": 2700.40 },
+        { "dia": 13, "faturamento": 3500.00 },
+        { "dia": 14, "faturamento": 0.0 },     # Feriado ou final de semana
+        { "dia": 15, "faturamento": 4000.50 },
+        { "dia": 16, "faturamento": 0.0 },     # Feriado ou final de semana
+        { "dia": 17, "faturamento": 500.75 },
+        { "dia": 18, "faturamento": 2200.60 },
+        { "dia": 19, "faturamento": 0.0 },     # Feriado ou final de semana
+        { "dia": 20, "faturamento": 3000.85 },
+        { "dia": 21, "faturamento": 1200.25 },
+        { "dia": 22, "faturamento": 0.0 },     # Feriado ou final de semana
+        { "dia": 23, "faturamento": 0.0 },     # Feriado ou final de semana
+        { "dia": 24, "faturamento": 3800.70 },
+        { "dia": 25, "faturamento": 2100.40 },
+        { "dia": 26, "faturamento": 3200.10 },
+        { "dia": 27, "faturamento": 0.0 },     # Feriado ou final de semana
+        { "dia": 28, "faturamento": 1900.00 },
+        { "dia": 29, "faturamento": 0.0 },     # Feriado ou final de semana
+        { "dia": 30, "faturamento": 2800.30 }
+    ]
+}
