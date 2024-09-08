@@ -7,6 +7,7 @@ import java.net.URL;
 
 public class acessarJSON {
 
+
     public static String getJSON(String strUrl) {
         String textoJson = "";
 

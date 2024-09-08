@@ -5,13 +5,13 @@ import java.util.Scanner;
 public class Main {
     public static void main(String[] args) {
 
-//  1-------------
+////  1-------------
         int indice = 13;
         int soma = 0;
 
         for (int k = 0; k < indice; k++, soma+=k) System.out.println(soma);
 
-//  2-------------
+////  2-------------
 
         atividade2 chamada2 = new atividade2();
 
@@ -24,7 +24,7 @@ public class Main {
 //  3-------------
         atividade3 chamada3 = new atividade3();
 
-        chamada3.inprimir();
+        chamada3.imprimirValores();
 
 
 //  4-------------
@@ -35,7 +35,7 @@ public class Main {
         chamada4.teste();
 
 
-//  5-------------
+////  5-------------
 
         Scanner inFrase = new Scanner(System.in);
         System.out.println("Insira uma frase: ");
