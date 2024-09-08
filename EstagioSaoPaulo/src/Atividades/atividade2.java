@@ -17,7 +17,7 @@ public class atividade2 {
     int total = 0;
 
     public int valorEscolhido() {
-        System.out.println("Insira o número escolhico");
+        System.out.println("\nInsira o número escolhico");
         valEscolhido = numero.nextInt();
         return 0;
     }
@@ -37,7 +37,7 @@ public class atividade2 {
     }
      public void chequagem(){
          if (fibonacci.contains(valEscolhido)) {
-             System.out.println("O valor " + valEscolhido + " é um valor de Fibonacci.");
-         } else {System.out.println("O valor " + valEscolhido + " não é um valor de Fibonacci.");}
+             System.out.println("O valor " + valEscolhido + " é um valor de Fibonacci.\n");
+         } else {System.out.println("O valor " + valEscolhido + " não é um valor de Fibonacci.\n");}
      }
 }

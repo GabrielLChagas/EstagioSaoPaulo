@@ -6,29 +6,39 @@ import java.util.*;
 
 public class atividade3 extends acessarJSON {
 
-    String arquivo = getJSON(
-            "https://raw.githubusercontent.com/GabrielLChagas/EstagioSaoPaulo/main/dadosDeDaturamento");
+    String arquivo = getJSON("https://raw.githubusercontent.com/GabrielLChagas/EstagioSaoPaulo/main/dadosDeDaturamento");
 
-    Map<String, Double> map = new Gson().fromJson(arquivo.toString(), Map.class);
+    Map<String, Double> jsonMap = new Gson().fromJson(arquivo, Map.class);
 
-    Iterator<Double> diasUteis = map.values().iterator();
+    Iterator<Double> diasUteis = jsonMap.values().iterator();
+
+    Map<String, Double> resultadosAcimaDaMedia = new LinkedHashMap<>(jsonMap);
+
+    Iterator<Double> valores = resultadosAcimaDaMedia.values().iterator();
+
     Double media = 0d;
     Integer dias = 0;
     Double totalMes = 0d;
 
-    public void imprimirValores(){
-        while (diasUteis.hasNext()){
-            if (diasUteis.next() != 0){
+    public void imprimirValores() {
+
+        while (diasUteis.hasNext()) {
+            if (diasUteis.next() >= 0d) {
                 totalMes += diasUteis.next();
                 dias++;
             }
+            media = totalMes / dias;
+        }
+        while (valores.hasNext()) {
+            if (valores.next() <= media)
+                valores.remove();
         }
 
-        media = totalMes/dias;
 
-        System.out.println("\nMaior faturamento do mês: " + Collections.max(map.values()));
-        System.out.println("\nMenor faturamento do mês: " + Collections.min(map.values()));
-        System.out.println("\nMédia mensal: " + media);
+
+        System.out.println("\nMaior faturamento do mês: " + Collections.max(jsonMap.values()));
+        System.out.println("Menor faturamento do mês: " + Collections.min(jsonMap.values()));
+        System.out.println("Média mensal: " + media);
+        System.out.println("Dias da ganhos superior a média: " + resultadosAcimaDaMedia.toString());
     }
-
 }

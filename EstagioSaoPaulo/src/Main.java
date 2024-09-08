@@ -38,7 +38,7 @@ public class Main {
 ////  5-------------
 
         Scanner inFrase = new Scanner(System.in);
-        System.out.println("Insira uma frase: ");
+        System.out.println("\nInsira uma frase: ");
         String frase = inFrase.nextLine();
         StringBuilder inversor = new StringBuilder(frase);
         System.out.println(inversor.reverse());

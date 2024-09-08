@@ -41,5 +41,11 @@ public class atividade4 {
         System.out.println(faturaPocentual);
     }
 
+    @Override
+    public String toString() {
+        return "\n{" +
+                "faturaPocentual=" + faturaPocentual +
+                "}\n";
+    }
 }
 
